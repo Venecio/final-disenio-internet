@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    background-image: url("recursos/fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+header {
+    padding: 15px;
+}
+
+.contenido>p {
+    color: rgb(248, 244, 244);
+    padding: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: rgba(49, 45, 45, 0.534);
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+
+}
+
+/* LOGO */
+#logo {
+    color: white;
+    border-bottom: 7px black double;
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.logoP {
+    color: rgb(235, 95, 95);
+}
+
+
+/* Menu */
+#menuNavegacion {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(49, 45, 45, 0.534);
+}
+
+#ulMenu {
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+#liMenu {
+    display: inline-block;
+    padding: 10px 0px 10px 60px;
+    text-decoration: none;
+
+
+}
+
+#liMenu>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+#liMenu>a:hover {
+    color: red;
+}
+
+/* Página CONTACTO*/
+label {
+    color: wht;
+}
+
+/* Página GALERIA*/
+.galeria {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#contenedor-divs {
+    text-align: center;
+}
+
+/* MODAL
+.modal-contenedor {
+    background-color: rgba(49, 45, 45, 0.534);
+    align-items: center;
+    position: relative;
+    display: block;
+    opacity: 0;
+    list-style-type: none;
+
+}
+
+.galeria #abrir {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    left: 165px;
+
+
+}
+
+.modal {
+    background-color: rgba(49, 45, 45, 0.534);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -120px;
+    margin-top: -180px;
+    color: white;
+    font-family: sans-serif;
+    list-style-type: none;
+
+}
+
+.mostrar {
+    pointer-events: auto;
+    opacity: 1;
+}
+*/
+.galeria {
+    position: relative;
+
+}
+
+/*Pie Pagina */
+.piePag {
+    color: white;
+}
+
+#piePagina {
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    height: 100px;
+    background-color: rgba(49, 45, 45, 0.534);
+    padding-left: 10px;
+    margin: auto;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    
+}
+#iconoFA{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.637);
+    margin-right: 7px;
+    text-decoration: none;
+}
