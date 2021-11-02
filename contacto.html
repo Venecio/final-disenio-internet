@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Contactanos</title>
 </head>
 
@@ -17,25 +18,23 @@
     <header id="encabezado">
 
     </header>
-    <div id="menuNavegacion">
+    <nav id="menuNavegacion"></nav>
 
+    <div class="form-container">
+        <form class="formularioContacto"  method="post">
+            <h2 id="tituloFormContacto">Contactanos</h2>
+            <input class="inputForm" type="text" name="apellido" placeholder="Apellido:"><br>
+            <input class="inputForm" type="text" name="nombre" placeholder="Nombre:"><br>
+            <input class="inputForm" type="email" name="email" placeholder="Email:"><br>
+            <input class="inputForm" type="date" name="fNacimiento" placeholder="Fecha nacimiento"><br>
+            <input class="inputForm" type="number" name="cuit" placeholder="CUIT"><br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje.."></textarea>
+            <input class="boton" type="submit" value="Enviar" name="enviar">
+            <input class="boton" type="reset" value="Cancelar">
+    
+        </form>
     </div>
-    <form class="formularioContacto" action="" method="post">
-        <label class="contactoForm" for="">Apellido</label><br>
-        <input type="text" name="apellido"><br>
-        <label class="contactoForm" for="">Nombre</label><br>
-        <input type="text" name="nombre"><br>
-        <label class="contactoForm" for="">Email</label><br>
-        <input type="email" name="email"><br>
-        <label class="contactoForm" for="">Fecha de nacimiento</label><br>
-        <input type="date" name="fNacimiento"><br>
-        <label class="contactoForm" for="">Cuit</label><br>
-        <input type="number" name="cuit"><br>
-        <input type="submit" value="Enviar" name="enviar">
-        <input type="reset" value="Cancelar">
-    </form>
-
-    <footer id="piePagina"></footer>
+    <div class="footer" id="piePagina"></div>
     <script src="menu.js"></script>
 
 </body>

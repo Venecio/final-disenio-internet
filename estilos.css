@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style-type: none;
+    text-decoration: none;
 }
 
 body {
@@ -12,6 +15,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
 }
 
 header {
@@ -30,7 +38,7 @@ header {
 
 }
 
-/* LOGO */
+/* LOGO  index*/
 #logo {
     color: white;
     border-bottom: 7px black double;
@@ -41,6 +49,15 @@ header {
 
 .logoP {
     color: rgb(235, 95, 95);
+}
+
+.botonIndex {
+    background-color: rgba(49, 45, 45, 0.534);
+    padding: 8px;
+    color: rgb(248, 244, 244);
+    cursor: pointer;
+    margin-top: 10px;
+
 }
 
 
@@ -72,13 +89,66 @@ header {
 }
 
 #liMenu>a:hover {
-    color: red;
+    color: whitesmoke;
+    border-bottom: 3px solid white;
+    transition: all 0.3s ease-in-out;
+
+
 }
 
 /* Página CONTACTO*/
-label {
-    color: wht;
+.form-container {
+    display: block;
+    text-align: center;
 }
+
+.formularioContacto {
+    margin-top: 20px;
+
+    background-color: rgba(49, 45, 45, 0.534);
+    width: 25%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 3px double;
+    padding: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.labelForm {
+    color: white;
+}
+
+.inputForm {
+    padding: 7px;
+    border-radius: 10px;
+    width: 50%;
+    border-bottom: 2px;
+    display: inline-block;
+
+}
+
+.boton {
+    margin-top: 5px;
+    margin-right: auto;
+    padding: 7px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#tituloFormContacto {
+    color: white;
+    font-family: 'poppins';
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+    margin: 5px;
+}
+
 
 /* Página GALERIA*/
 .galeria {
@@ -155,12 +225,27 @@ label {
     padding-left: 10px;
     margin: auto;
     text-align: left;
-    font-family: 'Oswald', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;
 }
-#iconoFA{
+
+#iconoFA {
     display: inline-block;
     color: rgba(255, 255, 255, 0.637);
     margin-right: 7px;
     text-decoration: none;
 }
+
+/*Pagina Novedades */
+.tabla1 {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 90%;
+
+}
+.imagen{
+    display:block;
+    height: 300px;
+    width: auto;
+    
+}
+

@@ -28,11 +28,11 @@ botonX.addEventListener('click', () =>{
 */
 //Footer//
 
-document.getElementById("piePagina").innerHTML = "<footer id='piePagina'>"+
+document.getElementById("piePagina").innerHTML = "<div id='piePagina'>"+
 "<i id='iconoFA' class='fas fa-envelope'></i>  <span class='piePag'>pcabinscontacto@gmail.com</span><br>"+
 "<i id='iconoFA' class='fas fa-phone'></i>  <span class='piePag'>2657-207020</span><br>"+
 "<i id='iconoFA' class='fas fa-map-marker-alt'></i> <span class='piePag'>Buenos Aires 120</span><br>"+
 "<a href='https://www.facebook.com/' target='_blank' <i id='iconoFA' class='fab fa-facebook'></i></a>"+
 "<a href='https://www.twitter.com/' target='_blank' <i id='iconoFA' class='fab fa-twitter'></i></a>"+
 "<a href='https://www.instagram.com/' target='_blank' <i id='iconoFA' class='fab fa-instagram'></i>"+
-"</footer>"
+"</div>"
