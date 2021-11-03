@@ -1,5 +1,5 @@
 var cssFile = document.createElement('estilos.css');
-
+var horario = Date();
 
 document.getElementById("encabezado").innerHTML = "<header id='encabezado'>" +
     "<h1 id='logo'><span class='logoP'>P</span>Cabin</h1>" +
@@ -11,7 +11,16 @@ document.getElementById("menuNavegacion").innerHTML = "<ul id='ulMenu'>" +
     "<li id='liMenu'><a  href='cabanias.html'>Cabañas</a></li>" +
     "<li id='liMenu'><a  href='novedades.html'>Novedades</a></li>" +
     "<li id='liMenu'><a  href='contacto.html'>Contacto</a></li>" +
+    "<li id='liMenu2'></li>"+
+    "<li id='liMenu3'></li>"+
     "</ul>"
+let hoy = new Date();  
+let fecha = hoy.getDate() + '-' + (hoy.getMonth()+1) + '-' + hoy.getFullYear();
+let hora = hoy.getHours() + ':' + hoy.getMinutes() + ':' + hoy.getSeconds();
+let fechaYHora = "Fecha: "+ fecha + " Hora: " + hora;
+document.getElementById("liMenu2").innerHTML = fechaYHora;
+
+
 
 /*
 const abrir = document.getElementById('abrir');
