@@ -23,15 +23,13 @@
     <div class="form-container">
         <form class="formularioContacto"  method="post">
             <h2 id="tituloFormContacto">Contactanos</h2>
-            <input class="inputForm" type="text" name="apellido" placeholder="Apellido:"><br>
-            <input class="inputForm" type="text" name="nombre" placeholder="Nombre:"><br>
+            <input class="inputForm" type="text" name="apellido" placeholder="Apellido:" pattern="[A-Za-z0-9_-]{1,15}" required><br>
+            <input class="inputForm" type="text" name="nombre" placeholder="Nombre:" pattern="[A-Za-z0-9_-]{1,15}" required><br>
             <input class="inputForm" type="email" name="email" placeholder="Email:"><br>
-            <input class="inputForm" type="date" name="fNacimiento" placeholder="Fecha nacimiento"><br>
-            <input class="inputForm" type="number" name="cuit" placeholder="CUIT"><br>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje.."></textarea>
+            <input class="inputForm" type="date" name="fNacimiento" placeholder="Fecha nacimiento" min="1901-01-01" max="2021-12-31"><br>
+            <input class="inputForm" type="number" name="cuit" placeholder="CUIT" pattern="[A-Za-z]{3}" title="CUIT INVALIDO"><br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje.." maxlength="200"></textarea>
             <input class="boton" type="submit" value="Enviar" name="enviar">
-            <input class="boton" type="reset" value="Cancelar">
-    
         </form>
     </div>
     <div class="footer" id="piePagina"></div>

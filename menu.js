@@ -28,11 +28,44 @@ botonX.addEventListener('click', () =>{
 */
 //Footer//
 
-document.getElementById("piePagina").innerHTML = "<div id='piePagina'>"+
-"<i id='iconoFA' class='fas fa-envelope'></i>  <span class='piePag'>pcabinscontacto@gmail.com</span><br>"+
-"<i id='iconoFA' class='fas fa-phone'></i>  <span class='piePag'>2657-207020</span><br>"+
-"<i id='iconoFA' class='fas fa-map-marker-alt'></i> <span class='piePag'>Buenos Aires 120</span><br>"+
-"<a href='https://www.facebook.com/' target='_blank' <i id='iconoFA' class='fab fa-facebook'></i></a>"+
-"<a href='https://www.twitter.com/' target='_blank' <i id='iconoFA' class='fab fa-twitter'></i></a>"+
-"<a href='https://www.instagram.com/' target='_blank' <i id='iconoFA' class='fab fa-instagram'></i>"+
+/*document.getElementById("piePagina").innerHTML =
+"<div id='piePagina'>"+
+    "<i id='iconoFA' class='fas fa-envelope'></i>  <span class='piePag'>pcabinscontacto@gmail.com</span><br>"+
+    "<i id='iconoFA' class='fas fa-phone'></i>  <span class='piePag'>2657-207020</span><br>"+
+    "<i id='iconoFA' class='fas fa-map-marker-alt'></i> <span class='piePag'>Buenos Aires 120</span><br>"+
+    "<a href='https://www.facebook.com/' target='_blank' <i id='iconoFA' class='fab fa-facebook'></i></a>"+
+    "<a href='https://www.twitter.com/' target='_blank' <i id='iconoFA' class='fab fa-twitter'></i></a>"+
+    "<a href='https://www.instagram.com/' target='_blank' <i id='iconoFA' class='fab fa-instagram'></i>"+
+"</div>"
+*/
+document.getElementById("piePagina").innerHTML = 
+"<div id='piePagina'>"+
+"<table class='tablaFooter' width='100%'>"+
+"<tr>"+
+    "<th class='th1'>"+
+    "<i id='iconoFA' class='fas fa-envelope'></i><span class='piePag'>pcabinscontacto@gmail.com</span>"+
+    "</th>"+
+    "<th rowspan='2' class='th2'>"+"<img class='imagenVenecio' src='recursos/fondoGit.jpg' alt='' >"+
+    "</th>"+
+"</tr>"+
+"<tr>"+
+    "<th class='th1'>"+
+    "<i id='iconoFA' class='fas fa-phone'></i>  <span class='piePag'>2657-207020</span>"+
+    "</th>"+
+    
+"</tr>"+
+"<tr>"+
+    "<th class='th1'>"+
+    "<i id='iconoFA' class='fas fa-map-marker-alt'></i> <span class='piePag'>Buenos Aires 120</span>"+
+    "</th>"+
+    "<th class='th2'>Venecio</th>"+
+"</tr>"+
+"<tr>"+
+    "<th class='th1'>"+
+    "<a href='https://www.facebook.com/' target='_blank' <i id='iconoFA' class='fab fa-facebook'></i></a>"+
+    "<a href='https://www.twitter.com/' target='_blank' <i id='iconoFA' class='fab fa-twitter'></i></a>"+
+    "<a href='https://www.instagram.com/' target='_blank' <i id='iconoFA' class='fab fa-instagram'></i>"+
+    "</th>"+
+    "<th class='th2'><a href='https://www.github.com/Venecio' target='_blank'<i id='iconoFA' class='fab fa-github'></i></th>"+
+"</tr>"+
 "</div>"
