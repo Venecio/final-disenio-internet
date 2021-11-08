@@ -1,16 +1,15 @@
 var cssFile = document.createElement('estilos.css');
 var horario = Date();
 
-document.getElementById("encabezado").innerHTML = "<header id='encabezado'>" +
-    "<h1 id='logo'><span class='logoP'>P</span>Cabin</h1>" +
-    "</header>"
-
 document.getElementById("menuNavegacion").innerHTML = "<ul id='ulMenu'>" +
+    "<h1 id = 'logo'> <span class = 'logoP'>P</span>Cabin</h1>" +
     "<li id='liMenu'><a  href='index.html'>Inicio</a></li>" +
     "<li id='liMenu'><a  href='institucion.html'>Institución</a></li>" +
     "<li id='liMenu'><a  href='cabanias.html'>Cabañas</a></li>" +
     "<li id='liMenu'><a  href='novedades.html'>Novedades</a></li>" +
     "<li id='liMenu'><a  href='contacto.html'>Contacto</a></li>" +
+    "<li id='liMenu'><a  href='bonus.html'>Bonus</a></li>" +
+
     "</ul>"
 
 /*var span = document.getElementById('span');
@@ -66,20 +65,20 @@ let hoy = new Date();
 
 function calcularCumple() {
     let fNacimiento = document.getElementById("fNacimiento").valueAsDate;
-if(fNacimiento <= hoy){
-    let MilisegundosFNacimiento = (fNacimiento.getTime());
-    let diferenciaTiempo = hoy.getTime() - MilisegundosFNacimiento;
+    if (fNacimiento <= hoy) {
+        let MilisegundosFNacimiento = (fNacimiento.getTime());
+        let diferenciaTiempo = hoy.getTime() - MilisegundosFNacimiento;
 
-    let diferenciaEnDias = parseInt(diferenciaTiempo / (1000 * 60 * 60 * 24));
-    alert(diferenciaEnDias);
-}else{
+        let diferenciaEnDias = parseInt(diferenciaTiempo / (1000 * 60 * 60 * 24));
+        alert(diferenciaEnDias);
+    } else {
         let MilisegundosFNacimiento = (fNacimiento.getTime());
         let diferenciaTiempo = MilisegundosFNacimiento - hoy.getTime();
-    
+
         let diferenciaEnDias = parseInt(diferenciaTiempo / (1000 * 60 * 60 * 24));
-        alert(diferenciaEnDias+1);
-}
-    
+        alert(diferenciaEnDias + 1);
+    }
+
 }
 
 
