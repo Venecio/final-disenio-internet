@@ -116,6 +116,7 @@ header {
     padding: 10px;
     font-family: 'Oswald', sans-serif;
     text-align: right;
+    box-shadow: 0 4px 2px -2px gray;    
 
 }
 
@@ -161,7 +162,7 @@ header {
 
 .formularioContacto {
     margin-top: 20px;
-    background-color: rgba(49, 45, 45, 0.534);
+    background: rgba(74, 75, 80, 0.13);
     width: 25%;
     border-radius: 10px;
     display: inline-block;

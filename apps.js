@@ -89,7 +89,7 @@ document.getElementById("piePagina").innerHTML =
     "<th class='th1'>" +
     "<i id='iconoFA' class='fas fa-envelope'></i><span class='piePag'>pcabinscontacto@gmail.com</span>" +
     "</th>" +
-    "<th rowspan='2' class='th2'>" + "<img class='imagenVenecio' src='recursos/fondoGit.jpg' alt='' >" +
+    "<th rowspan='2' class='th2'>" + "<a href='https://www.github.com/Venecio' target='_blank'><img class='imagenVenecio' src='recursos/fondoGit.jpg' alt='ImagenVenecioGithub' ></a>" +
     "</th>" +
     "</tr>" +
     "<tr>" +
