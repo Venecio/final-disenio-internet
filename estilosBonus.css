@@ -2,20 +2,41 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 .contenedor-Formulario {
     border-radius: 5px;
-    border: 1px solid black;
+
     padding: 20px;
-    width: 50%;
+    width: 100%;
+    text-align: left;
 }
 
-.formBonus {
-    
+.contenedor-respuesta {
+    width: 100%;
+    border-radius: 5px;
+
+
 }
 
-label {
+.botonBonus {
+    padding: 10px;
+    background: rgb(5, 150, 218);
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+    color: white;
+}
+.formLabelBonus{
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+.h1,
+h2,
+h3,
+h4 {
+    padding: 20px;
 }
 
 .inputFormBonus {

@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilosBonus.css">
+    <link rel="shortcut icon" href="recursos/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Bonus calculos</title>
 </head>
 
@@ -12,27 +18,45 @@
     <header id="encabezado">
         <nav id="menuNavegacion"></nav>
     </header>
-    <div class="contenedor-Formulario">
-        <form class="formBonus" action="" method="post">
-            <label for="">Apellido</label>
-            <input class="inputFormBonus"type="text">
-            <label for="">Nombre</label>
-            <input class="inputFormBonus"type="text">
-            <label for="">Correo</label>
-            <input class="inputFormBonus"type="email">
-            <label for="">Fecha de nacimiento</label>
-            <input class="inputFormBonus"type="date">
-            <label for="">CUIT</label>
-            <input class="inputFormBonus"type="number">
-            <label for="">Hincha de:</label><br>
-            <label for="1club">River</label>
-            <input type="radio" id="1club"><br>
-            <label for="2club">Boca</label>
-            <input type="radio" id="2club"><br>
-            <label for="3club">Otro</label>
-            <input type="radio" id="3club">
-        </form>
-    </div>
+    <table class="tablaBonus" width="100%">
+        <tr>
+            <th width="50%">
+                <div class="contenedor-Formulario">
+                    <label class="formLabelBonus" for="">Apellido</label>
+                    <input id="apellidoB" class="inputFormBonus" type="text" pattern="[A-Za-z]{2,18}" required>
+                    <label class="formLabelBonus" for="">Nombre</label>
+                    <input id="nombreB" class="inputFormBonus" type="text" pattern="[A-Za-z]{2,18}" required>
+                    <label class="formLabelBonus" for="">Fecha de nacimiento</label>
+                    <input id="fNacimiento" class="inputFormBonus" type="date">
+                    <label class="formLabelBonus" for="">Color favorito</label>
+                    <input id="colorB" class="" type="color" ><br>
+                    <label class="formLabelBonus" for="">CUIT / CUIL</label>
+                    <input id="CuitID" class="inputForm" type="number"><br>
+                    <label class="formLabelBonus" for="">Hincha de:</label><br>
+                    <select name="" id="selector" class="inputForm" required>
+                        <option value="River">River</option>
+                        <option value="Boca">Boca</option>
+                        <option value="Otro">Otro</option>
+                    </select><br>
+                    <button class="botonBonus" onclick="mostrarInfo()">Mostrar info</button>
+                </div>
+            </th>
+            <th width="50%">
+                <div class="contenedor-respuesta">
+                    <p id="info">
+                        <h1 id="apellidoYNombreBonus"></h1>
+                        <h2 id="Cuit"></h2>
+                        <h2 id="nYA"></h2>
+                        <h2 id="infoNacimiento"></h2>
+                        <h2 id="infoNacimiento2"></h2>
+                        <h2 id="signo"></h2>
+                        <h3 id="fNacimientoBonus"></h3>
+                        <h4 id="equipoBonus"></h4>
+                    </p>
+                </div>
+            </th>
+        </tr>
+    </table>
     <footer id="piePagina"></footer>
     <script src="apps.js"></script>
 </body>

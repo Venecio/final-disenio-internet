@@ -18,19 +18,51 @@
     <header id="encabezado">
         <nav id="menuNavegacion"></nav>
     </header>
+    <table width="100%" class="tablaContacto">
+        <tr>
+            <th width="50%">
+                <div class="form-container">
+                    <form class="formularioContacto" method="post" action="">
+                        <h2 class="tituloContacto">Contactanos</h2>
+                        <h3 class="subtituloContacto">Nos encantaría recibir tu mensaje</h3>
+                        <input class="inputForm" id="apellido" type="text" placeholder="Apellido:" pattern="[A-Za-z ]{3,18}"><br>
+                        <input class="inputForm" id="nombre" type="text" placeholder="Nombre:"
+                            pattern="[A-Za-z ]{3,18}" required><br>
+                        <input class="inputForm" id="email" type="email" placeholder="Email:" pattern="[A-Za-z0-9_-.]{10,50}" title="Correo invalido" required><br>
+                        <input class="inputForm" id="fechaNacimiento" type="date" 
+                            placeholder="Fecha nacimiento" min="1901-01-01" max="2021-12-31" required><br>
+                        <input class="inputForm" id="Cuit" type="number" placeholder="CUIT / CUIL sin guiones"
+                            minlength="11" maxlength="11" title="CUIT INVALIDO, debe estar conformado de esta forma ##-########-#"><br>
+                        <textarea id="mensaje" cols="30" rows="10" 
+                            maxlength="200" required></textarea><br>
+                        <button class="boton" id="enviar" onclick="esMenor(),cuit()">Enviar</button>
+                    </form>
 
-    <div class="form-container">
-        <form class="formularioContacto"  method="post" action="contacto.html">
-            <h2 id="tituloFormContacto">Contactanos</h2>
-            <input class="inputForm" id="apellido" type="text" name="apellido" placeholder="Apellido:" pattern="[A-Za-z0-9_-]{1,15}" ><br>
-            <input class="inputForm" id="nombre" type="text" name="nombre" placeholder="Nombre:" pattern="[A-Za-z0-9_-]{1,15}" ><br>
-            <input class="inputForm" id="email" type="email" name="email" placeholder="Email:"><br>
-            <input class="inputForm" id="fNacimiento" type="date" name="fNacimiento" placeholder="Fecha nacimiento" min="1901-01-01" max="2021-12-31"><br>
-            <input class="inputForm" id="Cuit" type="number" name="cuit" placeholder="CUIT" pattern="[A-Za-z]{3}" title="CUIT INVALIDO"><br>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje.." maxlength="200"></textarea>
-            <button class="boton" onclick="calcularCumple()" id="enviar">Enviar</button>
-        </form>
-    </div>
+                </div>
+            </th>
+            <th width="50%" class="th2">
+                <div class="fondoContacto">
+                    <p>
+                        <h2 id="subtituloContacto">En que te podemos ayudar?</h2>
+                        <p style="color:black;">
+                            Nuestro equipo de soporte estará a tu disposición de 09 a 18 horas.
+                        </p>
+                        <h2 id="subtituloContacto">Inspirate</h2>
+                        <p style="color:black;">
+                            Probá nuestros planos personalizados       
+                        </p>
+                        <h2 id="subtituloContacto">Consulta disponibilidad / precios</h2>
+                        <p style="color:black;">
+                            Contamos con las mejores variedad de cabañas de todo San Luis, complementando con los mejores precios!      
+                        </p>
+                        
+
+                    </p>
+                    
+                </div>
+            </th>
+        </tr>
+    </table>
     <div class="footer" id="piePagina"></div>
     <script src="apps.js"></script>
 

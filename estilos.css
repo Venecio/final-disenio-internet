@@ -21,7 +21,7 @@ header {
 
 /* index contenido central */
 .contenido>p {
-    color: black;
+
     padding: 20px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -34,52 +34,66 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    
-  
+
+
 }
+
 .contenido .subtitulos {
     text-align: center;
-
+    font-family: 'Oswald', sans-serif;
 }
 
 .tituloCabaniaBasica {
     background: rgb(5, 150, 218);
     padding: 10px;
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
 }
+
 .tituloCabaniaEstandar {
     background: rgb(5, 150, 218);
     color: white;
     padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
 }
+
 .tituloCabaniaPremium {
     background: rgb(5, 150, 218);
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
 }
-.bloqueColorEstandar{
+
+.bloqueColorEstandar {
     width: 50px;
     height: 20px;
     background-color: rgb(15, 221, 15);
-    -ms-transform: skewY(20deg); 
+    -ms-transform: skewY(20deg);
     transform: skewY(20deg);
-  }
-.bloqueColorPremium{
+
+}
+
+.bloqueColorPremium {
     width: 50px;
     height: 20px;
     background-color: rgb(38, 197, 189);
-    -ms-transform: skewY(20deg); 
+    -ms-transform: skewY(20deg);
     transform: skewY(20deg);
-  }
-  
-.ulCabanias{
+}
+
+.ulCabanias {
     list-style-type: none;
 }
+
 .contenidoCabanias {
     background: rgba(74, 75, 80, 0.13);
     height: 250px;
     list-style-type: none;
     width: 20%;
-    
+    font-family: 'Oswald', sans-serif;
+
 }
 
 /* LOGO  index*/
@@ -116,8 +130,13 @@ header {
     padding: 10px;
     font-family: 'Oswald', sans-serif;
     text-align: right;
-    box-shadow: 0 4px 2px -2px gray;    
+    box-shadow: 0 4px 2px -2px gray;
 
+}
+
+.bonusColor {
+    background: orange;
+    padding: 5px;
 }
 
 #ulMenu {
@@ -153,24 +172,40 @@ header {
     text-decoration: none;
 
 }
+/*Pagina Institucion */
+
+.contenidoVal{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    
+
+}
+
 
 /* Página CONTACTO*/
 .form-container {
-    display: block;
-    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 25px;
 }
 
-.formularioContacto {
-    margin-top: 20px;
-    background: rgba(74, 75, 80, 0.13);
-    width: 25%;
-    border-radius: 10px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    border: white 3px double;
-    padding: 25px;
+.tituloContacto {
+    color: black;
+}
+
+#subtituloContacto {
     font-family: 'Oswald', sans-serif;
+    color: rgb(11, 176, 252);
+}
+
+
+.subtituloContacto {
+    color: #808080;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 .labelForm {
@@ -178,13 +213,20 @@ header {
 }
 
 .inputForm {
-    padding: 7px;
-    border-radius: 10px;
-    width: 50%;
-    border-bottom: 2px;
-    display: inline-block;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+.inputForm:focus::placeholder {
+    color: transparent;
+}
 
+textarea:focus::placeholder {
+    color: transparent;
 }
 
 .boton {
@@ -205,11 +247,42 @@ header {
 
 textarea {
     resize: none;
-    height: 70px;
-    margin: 5px;
-    width: 200px;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 80px;
 }
 
+.imgContacto {
+    height: auto;
+    width: 100%;
+
+}
+
+.tablaContacto .th2 {
+    border-left: 1px solid black;
+    background: rgba(74, 75, 80, 0.068);
+
+
+}
+
+.fondoContacto {
+    text-align: left;
+    background-size: cover;
+
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+.fondoContacto p {
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+}
 
 /* Página GALERIA*/
 .galeria {
@@ -319,39 +392,40 @@ textarea {
 }
 
 .tabla1 h2 {
-    color: white;
+    color: black;
 }
 
 .tabla1 p {
-    color: white;
+    color: black;
 
 }
 
 .tabla1 td {
-    background-color: rgba(49, 45, 45, 0.534);
+    background: rgba(74, 75, 80, 0.267);
     text-align: center;
 }
 
 .tabla1 th {
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-    background-color: rgba(49, 45, 45, 0.534);
+    background: rgb(5, 150, 218);
 }
 
 .imagen {
     display: block;
     height: 300px;
-    width: auto;
-
+    width: 100%
 }
 
+
 .ulNovedadesColor {
-    color: white;
+    color: black;
     font-size: 18px;
+    list-style-type: none;
 }
 
 .letrasColor {
-    color: rgb(235, 95, 95);
+    color: rgb(255, 0, 0);
     font-size: 25px;
 }
 
@@ -378,7 +452,12 @@ textarea {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Oswald', sans-serif;
+}
 
+.parrafoIndex {
+    color: #808080;
+    font-family: 'Oswald', sans-serif;
 }
 
 .text-block h1 {
@@ -394,17 +473,17 @@ textarea {
 .spanNegro {
     color: black;
 }
+
 /* Contenido Reglas*/
-.liReglas{
-    
-  
+
+.contenidoReglas {
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Oswald', sans-serif;
 
 }
-.contenidoReglas{
-    width: 100%;
-    text-align: center;
-    
-}
-ol{
+
+ol {
     list-style-position: inside;
 }

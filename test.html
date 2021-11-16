@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilotest.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form>
+        Cuit<input type="text">
+
+    </form>
+
+    <script>
+        function cuit(cuit) {
+            let Cuit = cuit.replace(/-/g, "");
+            let arreglo = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2];
+            let arregloCuit = [];
+            if (Cuit.length != 11) {
+                alert("Cuit invalido");
+            } else {
+                //Valor 1
+                let sumaTotal = 0;
+                for (i = 0; i < 10; i++) {
+                    arregloCuit[i] = parseInt(Cuit[i]);
+                    sumaTotal = sumaTotal + arregloCuit[i] * arreglo[i];
+                }
+                //  console.log("Valor 1 " + sumaTotal);
+                //Valor 2
+                let valor2 = sumaTotal % 11;
+                //   console.log(valor2);
+                //valor 3
+                let valor3 = parseInt(11 - valor2);
+                //   console.log(valor3);
+
+                let numVerificacion = Cuit % 10;
+                let preCuit1 = (Cuit[0]);
+                let preCuit2 = (Cuit[1]);
+                let preCuit = preCuit1 + preCuit2;
+
+                switch (valor3) {
+                    case 11:
+                        numVerif = 0;
+                        break;
+                    case 10:
+                        numVerif = 9;
+                        break;
+                    default:
+                        numVerif = valor3;
+
+                }
+                //      console.log("Num veri " + numVerif);
+                //      console.log("Num  " + numVerificacion);
+                if (numVerif == numVerificacion) {
+
+                } else {
+                    alert("Cuit invalido");
+                }
+                if (preCuit == 30) {
+                    console.log("Es cuit de empresa");
+                }
+            }
+
+
+        }
+        cuit("23051764590");
+    </script>
+</body>
+
+</html>
