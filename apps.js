@@ -165,50 +165,99 @@ function signoZodiaco(fecha) {
 
     if (mes == 1 && dia >= 20 || mes == 2 && dia <= 18) {
         resultado = ("Acuario");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/acuario.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
+        
     }
 
     if (mes == 2 && dia >= 19 || mes == 3 && dia <= 20) {
         resultado = ("Piscis");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/piscis.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 3 && dia >= 21 || mes == 4 && dia <= 19) {
         resultado = ("Aries");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/aries.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 4 && dia >= 20 || mes == 5 && dia <= 20) {
         resultado = ("Tauro");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/tauro.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 5 && dia >= 21 || mes == 6 && dia <= 20) {
         resultado = ("Gemini");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/geminis.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 6 && dia >= 21 || mes == 7 && dia <= 22) {
         resultado = ("Cancer");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/cancer.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 7 && dia >= 23 || mes == 8 && dia <= 22) {
         resultado = ("Leo");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/leo.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 8 && dia >= 23 || mes == 9 && dia <= 22) {
         resultado = ("Virgo");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/virgo.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 9 && dia >= 23 || mes == 10 && dia <= 22) {
         resultado = ("Libra");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/libra.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 10 && dia >= 23 || mes == 11 && dia <= 21) {
         resultado = ("Escorpio");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/scorpio.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 11 && dia >= 22 || mes == 12 && dia <= 21) {
         resultado = ("Sagitario");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/sagitario.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
     }
 
     if (mes == 12 && dia >= 22 || mes == 1 && dia <= 19) {
         resultado = ("Capricornio");
+        var img = document.createElement("img");
+        img.src = "recursos/zodiaco/scorpio.png";
+        var src = document.getElementById("signoImagen"); 
+        src.appendChild(img);
 
     } else if (mes > 12 || dia > 31) {
         alert("Por favor, ingresa una fecha valida ! ");
